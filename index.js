@@ -4,6 +4,33 @@ const n3 = 20;
 const n4 = 5;
 let rest = 0;
 const summ = 0;
+let oddNumbers;
+let numbers = [n1,n2,n3,n4];
+let larger;
+
+for(i=0; i < numbers.length; i++){
+summ += numbers[i];
+oddNumbers = numbers[i] % 2;
+larger = 25 - numbers[i];
+
+if(oddNumbers != 0){
+    console.log(`${oddNumbers} is an odd number`);
+}
+if(larger > 25){
+    console.log(`${larger} is larges than 25`);
+}
+let allDifferent = true;
+
+    for (let j = i + 1; j < numbers.length; j++) {
+        if (numbers[i] === numbers[j]) {
+            allDifferent = false;
+        }
+        Console.log(`The number ${allDifferent} is unic`);
+    }
+
+
+console.log(`The summ of all numbers is ${summ}`)
+
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
